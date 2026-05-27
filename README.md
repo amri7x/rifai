@@ -1,4 +1,7 @@
 # Hi there, I'm Rifai 👋
+
+[![Visi My Website](https://img.shields.io/badge/Portofolio-Visit%20Interactive%20Website-blue?style=for-the-badge&logo=google-chrome&logoColor=white)]
+
 ### Middle Frontend Engineer / React Specialist
 
 I am a passionate Frontend Developer with over a decade of experience in software engineering (since 2015, rooted in Software Engineering / RPL background). I specialize in building highly responsive, scalable, and pixel-perfect web applications. 
