@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="form-title">Registration Form</h1>
+    <p class="form-description">Please fill out this form with the required information</p>
+        <div class="form-group">
+            <label for="first-name" id="name-label">Enter Your First Name:</label>
+            <input class="form-label" type="text" id="first-name" name="first-name" placeholder="E.g. John" required>
+            <label for="last-name">Enter Your Last Name:</label>
+            <input class="form-label" type="text" id="last-name" name="last-name" placeholder="E.g. Doe" required>
+            <label for="email" id="email-label">Enter Your Email:</label>
+            <input class="form-label" type="email" id="email" name="email" placeholder="john@email.com" required>
+            <label for="password" id="password-label">Create a New Password:</label>
+            <input class="form-label" type="password" id="password" name="password" placeholder="Create a password" required>
+            <hr>
+        </div>
+        <div class="form-account">
+            <label for="account-type">Select Account Type (required)</label><br>
+            <input type="radio" id="account-type" name="account-type" value="personal" required>
+            <label for="account-type">Personal</label><br>
+            <input type="radio" id="account-type" name="account-type" value="business" required>
+            <label for="account-type">Business</label><br>
+            <hr>
+        </div>
+
+        <div class="form-additional">
+            <label for="picture-button">Upload a Profile Picture:</label>
+            <input type="file" id="picture" name="picture" accept="image/*">
+            <label for="age">Enter Your Age (years):</label>
+            <input type="number" id="age" name="age" placeholder="E.g. 25" min="0" required>
+            <label for="hear">How did you hear about us?</label>
+            <select id="hear" name="hear" required>
+                <option value="">Select an option (one required)</option>
+                <option value="freecodecamp-news">FreeCodeCamp News</option>
+                <option value="freecodecamp-forum">FreeCodeCamp Forum</option>
+                <option value="freecodecamp-youtube">FreeCodeCamp YouTube Channel</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="bio">Tell us a little about yourself:</label>
+            <textarea id="bio" name="bio" placeholder="I am a software developer with a passion for learning new technologies..." rows="4"></textarea>
+            <p><a href="terms.html" target="_blank">Read our terms and conditions</a></p>
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                I agree to the terms and conditions
+            </label>
+        </div>
+            <input type="submit" id="submit" value="Submit">
+        </div>
+
+</body>
+</html>

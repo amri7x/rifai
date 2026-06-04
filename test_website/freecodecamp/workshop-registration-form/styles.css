@@ -1,0 +1,87 @@
+* {
+    background-color: #16142b;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group, .form-account, .form-additional {
+    margin:auto;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    background-color: #2e294e;
+    color: #fff;
+}
+
+.form-additional {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: 0.2s ease-in-out;
+    margin: 0;
+}
+
+input[type="radio"]:checked::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+input:hover, textarea:hover {
+    background-color: #3e3a5e;
+}
+
+input:focus, textarea:focus {
+    background-color: #3e3a5e;
+    outline: 2px solid #fff;
+}
