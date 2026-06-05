@@ -21,11 +21,15 @@
             <hr>
         </div>
         <div class="form-account">
-            <label for="account-type">Select Account Type (required)</label><br>
-            <input type="radio" id="account-type" name="account-type" value="personal" required>
-            <label for="account-type">Personal</label><br>
-            <input type="radio" id="account-type" name="account-type" value="business" required>
-            <label for="account-type">Business</label><br>
+            <p><label for="account-type">Select Account Type (required)</label></p>
+            <label class="radio-option" for="account-personal">
+                <input type="radio" id="account-personal" name="account-type" value="personal" required>
+                <span>Personal</span>
+            </label>
+            <label class="radio-option" for="account-business">
+                <input type="radio" id="account-business" name="account-type" value="business" required>
+                <span>Business</span>
+            </label>
             <hr>
         </div>
 

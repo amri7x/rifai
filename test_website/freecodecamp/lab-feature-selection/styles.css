@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+}
+
+.feature-card-label {
+    display: block; /* Membuat label menjadi block agar bisa diatur ukurannya */
+    border: 2px solid #d3d3d3;
+    border-radius: 12px;
+    padding: 30px 20px;
+    cursor: pointer;
+    position: relative;
+    transition: border-color 0.3s ease;
+    background-color: #fff;
+    width: 200px;
+    height: 50px;
+}
+
+.feature-card-label:hover {
+    border: 2px solid orange;
+    box-shadow: 4px 4px 10px 0 rgba(221, 111, 8, 0.25);
+}
+
+.feature-card-label:has(input[type="checkbox"]:checked) {
+    border-color: orange;
+    }
+
+.feature-card-label input[type="checkbox"]{
+    appearance: none;
+    border: 2px solid rgb(209, 203, 196);
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.feature-card-label input[type="checkbox"]:checked::after {
+    content: '';
+    width: 5px;
+    height: 10px;
+    /* Membuat garis siku-siku menyerupai centang */
+    border: solid rgb(0, 0, 0);
+    border-width: 0 2px 2px 0;
+    /* Memutar garis siku agar membentuk centang sempurna */
+    transform: rotate(45deg);
+    margin-bottom: 2px; /* Micro-adjustment posisi centang */
+}
+
